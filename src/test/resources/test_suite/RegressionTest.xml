@@ -11,11 +11,11 @@
 
     <test name="Emulator-1">
         <!-- If you want to be more specific, replace this with a list of test classes you'd like to run -->
-        <parameter name="appium-server-port" value="1234"/>
+        <parameter name="appium-server-port" value="4723"/>
         <parameter name="mobile-device-id" value="emulator-5554"/>
         <parameter name="mobile-version" value="5.1.1"/>
-        <parameter name="browserName" value="Chrome"/>
-        <parameter name="mobile-device-name" value="Samsung_GII"/>
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="mobile-device-name" value="Nexus_4_API_22"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
