@@ -43,5 +43,5 @@
             <class name="runner.SmokeTest"/>
         </classes>
     </test>
-    
+
 </suite>
