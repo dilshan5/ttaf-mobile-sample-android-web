@@ -14,4 +14,4 @@ echo.
 cd /d "F:\MobileTesting\sdk1\emulator"
 
 start emulator -avd Nexus_4_API_22
-start emulator -avd Nexus_4_API_19
+
