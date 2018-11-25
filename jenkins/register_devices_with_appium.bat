@@ -14,10 +14,7 @@ echo Connecting all Andriod emulators with Appium-Server.....
 echo.
 
 
-cd /d "C:\Program Files (x86)\Appium\node_modules\appium\bin"
-
-start node appium.js -a 192.168.159.1 -p 1234 -bp 2345 --udid Nexus_4_API_22 --chromedriver-port 5645 --session-override
-start node appium.js -a 192.168.159.1 -p 3456 -bp 4567 --udid emulator-5556 --chromedriver-port 5745 --session-override
-
-
+start appium -a 192.168.159.1 -p 1234 -bp 2345 --udid emulator-5554 --chromedriver-port 5645 --session-override
+start appium -a 192.168.159.1 -p 3456 -bp 4567 --udid emulator-5556 --chromedriver-port 5745 --session-override
+start appium -a 192.168.159.1 -p 1345 -bp 2456 --udid ZX1G22TPD3 --chromedriver-port 5845 --session-override
 
