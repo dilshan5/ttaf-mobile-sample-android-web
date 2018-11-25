@@ -35,4 +35,16 @@
         </classes>
     </test>
 
+
+    <test name="Nexus 6">
+        <parameter name="port" value="3456"/>
+        <parameter name="deviceID" value="ZX1G22TPD3"/>
+        <parameter name="OSverison" value="7.1.1"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="deviceName" value="Nexus 6"/>
+        <classes>
+            <class name="runner.SmokeTest"/>
+        </classes>
+    </test>
+
 </suite>

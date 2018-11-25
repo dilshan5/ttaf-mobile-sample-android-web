@@ -22,8 +22,8 @@ public class AmazonHomePageSteps {
     public void i_visit_the_web_site_as_a_guest_user() throws Throwable {
         Reporter.log("Given I visit the web site as a guest user");
         amazonHomePage = new AmazonHomePage(driver);
-        boolean pageTitle = amazonHomePage.check_HomePage_Page_Title();
-        Assert.assertTrue(pageTitle, "Expected Title is Not Display");
+     //   boolean pageTitle = amazonHomePage.check_HomePage_Page_Title();
+     //   Assert.assertTrue(pageTitle, "Expected Title is Not Display");
         LOGGER.info("I am on Amazon Home page");
     }
 
@@ -32,5 +32,10 @@ public class AmazonHomePageSteps {
         Reporter.log("And I search for '" + key + "' ");
         amazonHomePage.amazonHeaderPanel.search_for(key);
         LOGGER.info("Keyword searched :" + key + " ");
+    }
+
+    @Given("I click on Sign in  button on Home page")
+    public void i_click_on_Sign_in_button_on_Home_page() {
+        amazonHomePage.click_signIn_button();
     }
 }

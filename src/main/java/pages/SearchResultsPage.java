@@ -33,8 +33,11 @@ public class SearchResultsPage extends BasicPage {
     @FindBy(id = "s-results-list-atf")
     private WebElement products;
 
-    @FindBy(id = "sort")
-    private WebElement sort_drop_down;
+    @FindBy(id = "sort-btn")
+    private WebElement sort_by;
+
+    @FindBy(id = "sx-top-filter-button")
+    private WebElement filter;
 
     public SearchResultsPage(AppiumDriver driver) throws Exception {
         super(driver);
@@ -73,8 +76,8 @@ public class SearchResultsPage extends BasicPage {
      */
     public void sort_by_value(String type) throws Exception {
     //    wait.until(ExpectedConditions.visibilityOf(sort_drop_down));
-        Select dropdown = new Select(sort_drop_down);
-        dropdown.selectByVisibleText(type);
+        filter.click();
+        sort_by.click();
     }
 
     /**
