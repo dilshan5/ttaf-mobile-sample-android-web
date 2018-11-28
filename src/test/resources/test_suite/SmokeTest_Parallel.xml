@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TTAF - SmokeTest - Multiple Android Device Testing in Parallel" parallel="tests" verbose="1"
+<suite name="TTAF - SmokeTest - Multiple Android Device Testing in Parallel" parallel="methods" verbose="10"
        configfailurepolicy="continue"
-       thread-count="3">
+       thread-count="5">
     <listeners>
         <!--
         This TestNG listener takes care of setting up and tearing down the Appium driver.
@@ -17,6 +17,7 @@
         <parameter name="mobile-version" value="5.1.1"/>
         <parameter name="browserName" value="Chrome"/>
         <parameter name="mobile-device-name" value="Nexus_4_API_21"/>
+        <parameter name="UiAutomator2-systemPort" value="8002"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
@@ -27,7 +28,8 @@
         <parameter name="mobile-device-id" value="emulator-5556"/>
         <parameter name="mobile-version" value="9"/>
         <parameter name="browserName" value="chrome"/>
-        <parameter name="mobile-device-name" value="Pie"/>
+        <parameter name="mobile-device-name" value="Pixel_2_API_28"/>
+        <parameter name="UiAutomator2-systemPort" value="8001"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
@@ -40,6 +42,7 @@
         <parameter name="mobile-version" value="7.1.1"/>
         <parameter name="browserName" value="chrome"/>
         <parameter name="mobile-device-name" value="Nexus 6"/>
+        <parameter name="UiAutomator2-systemPort" value="8003"/>
         <classes>
             <class name="runner.SmokeTest"/>
         </classes>
