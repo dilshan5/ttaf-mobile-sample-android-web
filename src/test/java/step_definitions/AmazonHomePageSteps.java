@@ -4,7 +4,6 @@ import com.automation.qa.ttafmobilecore.driver.DriverFactory;
 import com.automation.qa.ttafmobilecore.driver.DriverManager;
 import cucumber.api.java.en.Given;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import pages.AmazonHomePage;
 
 /**
@@ -17,10 +16,6 @@ public class AmazonHomePageSteps extends DriverFactory {
     @Given("^I visit the web site as a guest user$")
     public void i_visit_the_web_site_as_a_guest_user() throws Throwable {
         amazonHomePage = new AmazonHomePage(DriverManager.getTLDriver());
-        if (!DriverManager.getTLDriver().findElements(By.id("com.android.chrome:id/terms_accept")).isEmpty()) {
-            DriverManager.getTLDriver().findElement(By.id("com.android.chrome:id/term_accept")).click();
-        }
-
         LOGGER.info("I am on Amazon Home page");
     }
 
