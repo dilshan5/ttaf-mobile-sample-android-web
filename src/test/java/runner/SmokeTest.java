@@ -1,6 +1,6 @@
 package runner;
 
-import com.automation.qa.ttafmobilecore.util.CustomAbstractTestNGCucumberTests;
+import com.automation.qa.ttafmobilecore.driver.DriverFactory;
 import cucumber.api.CucumberOptions;
 import org.testng.annotations.Test;
 
@@ -15,8 +15,9 @@ import org.testng.annotations.Test;
                 "html:target/cucumber-reports"
         },
         monochrome = false,//Don't colour terminal output.
-        tags = {"@smoke"}
+        tags = {"@smoke_1"}
 )
 @Test
-public class SmokeTest extends CustomAbstractTestNGCucumberTests {
+public class SmokeTest extends DriverFactory {
+
 }

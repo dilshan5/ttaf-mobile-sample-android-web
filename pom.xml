@@ -8,7 +8,7 @@
     <artifactId>ttaf-mobile-sample-android-web</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <ttaf.mobile.core.version>1.0-SNAPSHOT</ttaf.mobile.core.version>
+        <ttaf.mobile.core.version>1.0.2-SNAPSHOT</ttaf.mobile.core.version>
         <maven.surefire.plugin>2.21.0</maven.surefire.plugin>
     </properties>
     <dependencies>
@@ -16,22 +16,6 @@
             <groupId>com.automation.qa</groupId>
             <artifactId>ttaf-mobile-core</artifactId>
             <version>${ttaf.mobile.core.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>4.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>4.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -73,7 +57,7 @@
             </build>
         </profile>
         <profile>
-            <id>SmokeTest</id>
+            <id>SmokeTest_Parallel</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -96,7 +80,7 @@
     </profiles>
     <repositories>
         <repository>
-            <id>ttaf-ui-core-mvn-repo</id>
+            <id>ttaf-mobile-core-mvn-repo</id>
             <url>https://raw.github.com/dilshan5/ttaf-mobile-core/mvn-repo/</url>
             <layout>default</layout>
             <releases>
@@ -112,7 +96,7 @@
     <!--specify a remote location of where Maven can find new plugins-->
     <pluginRepositories>
         <pluginRepository>
-            <id>ttaf-ui-core-mvn-repo</id>
+            <id>ttaf-mobile-core-mvn-repo</id>
             <url>https://raw.github.com/dilshan5/ttaf-mobile-core/mvn-repo/</url>
             <layout>default</layout>
             <releases>
