@@ -6,7 +6,7 @@ First you need to clone the 'master' branch of this project into your local mach
  and set your desired device for testing. 
  Set your Mobile platform (Android/iOS)
  Change your device ID and Appium port 
- Set Browser name. If you set your browser as 'Chrome' please make sure you have indtalled chrome browser in yor device.
+ Set Browser name. If you set your browser as 'Chrome' please make sure you have installed chrome browser in your device.
  
 # Set your android emulator/device 
   - Edit 'start_all_android_emulators.bat' file and change the device name
